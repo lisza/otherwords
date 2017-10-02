@@ -31,16 +31,22 @@ __Over the weekend:__
 - I couldn't get the node modules working on the site due to set up issues.
 - DID NOT: Built a sample site with working translate API responses.
 - DID NOT: Calculated string distances for each translation from the input word.
-__Day 1:__ Get basic functionality of the site working.
+
+__Day 1:__
+
+Get basic functionality of the site working.
 - [ ] Get basic site set up, including correct node module imports using
  webpack.
 - [ ] Make sure google-translate-api works.
 - [ ] Make sure I get a string distance algorithm working.
+
 __Day 2:__
+
 - [ ] Think about display of translation output once I have a
  better idea how my string distance algorithm output is distributed.
 - [ ] Optimize/update string distance output for suitable rendering.
 - [ ] Look into dataviz libraries to use, or use Canvas.
+
 __Day 3:__ Data viz and styling.
 __Day 4:__ More data viz, styling, bug fixes, optimization.
 
