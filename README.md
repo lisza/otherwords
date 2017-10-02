@@ -16,6 +16,7 @@ In OtherWords, users will be able to:
 - [ ] Hovering over a translation shows the language
 
 ## Wireframes
+![Otherwords main](docs/otherwords_main.png)
 
 ## Architecture and Technologies
 - JavaScript
@@ -32,9 +33,8 @@ __Over the weekend:__
 - DID NOT: Built a sample site with working translate API responses.
 - DID NOT: Calculated string distances for each translation from the input word.
 
-__Day 1:__
+__Day 1:__ Get basic functionality of the site working.
 
-Get basic functionality of the site working.
 - [ ] Get basic site set up, including correct node module imports using
  webpack.
 - [ ] Make sure google-translate-api works.
@@ -48,6 +48,7 @@ __Day 2:__
 - [ ] Look into dataviz libraries to use, or use Canvas.
 
 __Day 3:__ Data viz and styling.
+
 __Day 4:__ More data viz, styling, bug fixes, optimization.
 
 ## Bonus features
