@@ -16,7 +16,7 @@ In OtherWords, users will be able to:
 - [ ] Hovering over a translation shows the language
 
 ## Wireframes
-![Otherwords main](docs/otherwords_main.png)
+![Otherwords main](otherwords_main.png)
 
 ## Architecture and Technologies
 - JavaScript
