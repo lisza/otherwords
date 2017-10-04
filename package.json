@@ -1,20 +1,21 @@
 {
-  "name": "otherwords",
+  "name": "otherwords_test",
   "version": "1.0.0",
-  "description": "Otherwords is a website that shows a word translated into different languages all at once. Using the Google Translate API and an algorithm to determine similarity, a word and its translations are displayed on a similarity continuum that will (ideally) visually highlight common etymological roots.",
-  "main": "bundle.js",
+  "description": "",
+  "main": "index.js",
   "directories": {
     "lib": "lib"
   },
-  "dependencies": {
-    "google-translate-api": "^2.3.0"
-  },
-  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "webpack": "webpack --watch"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "webpack": "^3.6.0"
+  }
 }
