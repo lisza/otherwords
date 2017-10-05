@@ -17,6 +17,7 @@ input {
 .field {
   display: flex; /*maybe no flex here, but it looks okay*/
   flex-wrap: wrap; /*maybe no flex here, but it looks okay*/
+  flex-grow: 1;
   /*min-width: 40px;*/
   /*min-height: 40px;*/
   /*border: 1px solid lightgrey;
@@ -32,5 +33,46 @@ input {
   margin: 0 10px 5px 10px;
   padding: 2px 5px;
   width: fit-content;
-  /*height: fit-content; /*makes the outside boxes smaller*/*/
+  /*height: fit-content; /*makes the outside boxes smaller*/
+  position: relative;
+}
+
+.tooltiptext {
+  visibility: hidden;
+  background-color: #555;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  min-width: 70px;
+  text-align: center;
+
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  bottom: 120%;
+  right: 20%;
+  /*margin-left: -60px;*/
+
+  /* Fade in tooltip */
+  opacity: 0;
+  transition: opacity 0.75s;
+}
+
+/* Tooltip arrow */
+.field * .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 80%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+
+.field *:hover .tooltiptext {
+  visibility: visible;
+  opacity: 0.8;
 }
