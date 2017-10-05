@@ -1,0 +1,36 @@
+body {
+  font-family: sans-serif;
+}
+input {
+  height: 40px;
+  width: 300px;
+  color: darkgrey;
+  font-size: x-large;
+  font-weight: 300;
+  padding-left: 5px;
+}
+.row {
+  display: flex;
+  /*width: 100%*/
+  /*margin: 0 auto;*/
+}
+.field {
+  display: flex; /*maybe no flex here, but it looks okay*/
+  flex-wrap: wrap; /*maybe no flex here, but it looks okay*/
+  /*min-width: 40px;*/
+  /*min-height: 40px;*/
+  /*border: 1px solid lightgrey;
+  border-radius: 5px;*/
+  /*padding: 5px;*/
+  margin: 0 auto;
+}
+
+.field * {
+  flex-basis: 50px; /*maybe no flex here, but it looks okay*/
+  border: 1px solid burlywood;
+  border-radius: 5px;
+  margin: 0 10px 5px 10px;
+  padding: 2px 5px;
+  width: fit-content;
+  /*height: fit-content; /*makes the outside boxes smaller*/*/
+}
