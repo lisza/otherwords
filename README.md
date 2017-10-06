@@ -7,7 +7,6 @@ You enter a word and receive translations in 62 languages. The words are display
 Note: Most language inputs work, but results will be roman alphabet only.
 
 ![Otherwords translate demo](./docs/tree_hover_translate.gif)
-The site is responsively designed and mobile optimized using media queries.
 
 ### Word similarity
 Word similarity is determined by a combination of:
@@ -22,6 +21,32 @@ Translations are visualized on a custom two dimensional plane.
 - JavaScript dynamically generates HTML and CSS for the plane, and then
 populates it with the asynchronously processed translation results.
 - As a secondary means of visualization, border colors are also calculated based on similarity.
+
+```javascript
+const populateGrid = (results) => {
+  Object.keys(results).forEach((key) => {
+    let word = results[key];
+    let parentId = `${word.distance}-${(word.letter)}`;
+    let parentElement = document.getElementById(parentId);
+
+    // Create new div for each word, append to parentId element
+    if (parentElement) {
+      let wordDiv = document.createElement('div');
+      wordDiv.id = key;
+      wordDiv.innerHTML = word.text;
+
+      // Add tooltip span element inside of div
+      let tooltip = document.createElement('span');
+      tooltip.className = "tooltiptext";
+      tooltip.innerHTML = word.language;
+      wordDiv.appendChild(tooltip);
+
+      // Calculate border color based on word distance
+      wordDiv.style.border = `1px solid rgb(180, ${word.distance * 40}, 180)`;
+
+      parentElement.appendChild(wordDiv);
+    }
+```
 
 ### Translate API
 Otherwords uses the Google Translate API to fetch translations for more
