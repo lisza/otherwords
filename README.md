@@ -25,6 +25,7 @@ populates it with the asynchronously processed translation results.
 - As a secondary means of visualization, border colors are also calculated based on similarity.
 
 ```javascript
+// Generate html and css to fill visualization grid dynamically
 const populateGrid = (results) => {
   Object.keys(results).forEach((key) => {
     let word = results[key];
