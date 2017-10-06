@@ -2,25 +2,49 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>testing</title>
+    <title>otherwords</title>
     <script src="https://apis.google.com/js/api.js"></script>
     <script src="lib/bundle.js"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" href="./assets/style.css">
   </head>
 
   <body>
-    <form id="form">
-      <input id="input-word" placeholder="Enter a word..."/>
-    </form>
 
-    <div id="container">
-      <h2>Translations:</h2>
-      <div id="result"></div>
-    </div>
+    <!-- <div class="container"> -->
+      <main>
+        <aside>
+          <h1>Other Words</h1>
+          <p>Other Words is an app to visualize translations.</p>
+          <p>Enter a word in the text box, and receive translations in
+            62 languages.<p/>
+          <p>The words are displayed by similarity to
+            the input word, and similarity between each other. Closely
+            related words appear grouped together, and the groups
+            furthest away from the input word are the least similar to
+            it.</p>
+          <p>Hover over a word to see its language.</p>
+          <p>Note: Most language inputs should work, but results will
+            be roman alphabet languages only.</p>
 
-    <div id="grid">
+          <footer>
+            <p>Otherwords uses the Google Translate API. Word Similarity
+              is determined with the help of the Levenshtein string
+              distance algorithm in combination with first-letter
+              grouping.</p>
+            <a href="https://github.com/lisza"><img src="./assets/images/GitHub-Logo.png"> github.com/lisza</a>
+          </footer>
+        </aside>
 
-    </div>
+        <div id="results-container">
+          <form id="form">
+            <input id="input-word" placeholder="Enter a word..."/>
+          </form>
+
+          <div id="grid"></div>
+        </div>
+        </main>
+      <!-- </div> -->
 
   </body>
 </html>
