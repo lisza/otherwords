@@ -46,6 +46,12 @@ input {
   margin: 10px 0 25px 10px;
 }
 
+input:focus {
+  outline-style: none;
+  box-shadow: none;
+  /*border-color: transparent;*/
+}
+
 .row {
   display: flex;
 }
@@ -108,11 +114,12 @@ input {
   opacity: 0.85;
 }
 
-/*@media only screen and (min-width:500px) {
-}*/
-
-@media only screen and (max-width:499px) {
+@media only screen and (max-width:900px) {
   main {
     display: block;
+  }
+
+  #results-container, input {
+    padding-left: 2px;
   }
 }
