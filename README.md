@@ -6,6 +6,7 @@ You enter a word and receive translations in 62 languages. The words are display
 
 Note: Most language inputs work, but results will be roman alphabet only.
 
+![Otherwords translate demo](tree_hover_translate.gif)
 The site is responsively designed and mobile optimized using media queries.
 
 ### Word similarity
