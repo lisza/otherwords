@@ -1,5 +1,7 @@
 # Otherwords
 
+Try it out at: https://lisza.github.io/otherwords/
+
 ### Overview
 Other Words is an app to visualize translations and their relation to one another.
 You enter a word and receive translations in 62 languages. The words are displayed by similarity to the input word, aa well as similarity between each other. Closely related words appear grouped together, and the groups furthest away from the input word are the least similar to it.
