@@ -65,6 +65,7 @@ input:focus {
 .field * {
   flex-basis: 50px; /*maybe no flex here, but it looks okay*/
   border: 1px solid burlywood;
+  box-shadow: 0 1px 4px rgba(0,0,0,.04);
   border-radius: 5px;
   margin: 0 10px 5px 10px;
   padding: 2px 5px;
@@ -113,7 +114,7 @@ input:focus {
   opacity: 0.85;
 }
 
-@media only screen and (max-width:900px) {
+@media only screen and (max-width:1100px) {
   main {
     display: block;
   }
