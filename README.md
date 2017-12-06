@@ -1,6 +1,6 @@
 # Otherwords
 
-Try it out at: https://lisza.github.io/otherwords/
+Try it out at: http://liszalisza.com/otherwords
 
 ### Overview
 Other Words is an app to visualize translations and their relation to one another.
