@@ -60,6 +60,7 @@ input:focus, button:focus {
 button {
   width: 140px;
   height: 45px;
+  cursor: pointer;
 }
 
 .row {
@@ -121,6 +122,11 @@ button {
 
 /* Make tooltip visible on hover */
 .field *:hover .tooltiptext {
+  visibility: visible;
+  opacity: 0.85;
+}
+
+.visible {
   visibility: visible;
   opacity: 0.85;
 }
